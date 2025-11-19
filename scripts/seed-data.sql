@@ -259,28 +259,28 @@ VALUES (
     '2024-10-15'
 );
 
--- Ajouter Yoan Thirions (étudiant CODA Dijon)
+-- Ajouter Yoan Thirion (étudiant CODA Dijon)
 INSERT INTO student.etudiant (nom, prenom, email, date_naissance, id_etablissement)
 VALUES (
-    'Thirions',
+    'Thirion',
     'Yoan',
-    'yoan.thirions@coda-school.com',
+    'yoan.thirion@coda-school.com',
     '2000-01-01',
     (SELECT id_etablissement FROM student.etablissement WHERE nom = 'CODA Dijon')
 );
 
--- Inscription de Yoan Thirions au cours "Introduction aux Bases de Données" (cours SQL)
+-- Inscription de Yoan Thirion au cours "Introduction aux Bases de Données" (cours SQL)
 INSERT INTO student.inscription (id_etudiant, id_cours, date_inscription)
 VALUES (
-    (SELECT id_etudiant FROM student.etudiant WHERE email = 'yoan.thirions@coda-school.com'),
+    (SELECT id_etudiant FROM student.etudiant WHERE email = 'yoan.thirion@coda-school.com'),
     (SELECT id_cours FROM student.cours WHERE titre = 'Introduction aux Bases de Données'),
     '2024-09-01'
 );
 
--- Note de 0.5/20 pour Yoan Thirions dans "Introduction aux Bases de Données"
+-- Note de 0.5/20 pour Yoan Thirion dans "Introduction aux Bases de Données"
 INSERT INTO student.note (id_etudiant, id_cours, valeur, date_note)
 VALUES (
-    (SELECT id_etudiant FROM student.etudiant WHERE email = 'yoan.thirions@coda-school.com'),
+    (SELECT id_etudiant FROM student.etudiant WHERE email = 'yoan.thirion@coda-school.com'),
     (SELECT id_cours FROM student.cours WHERE titre = 'Introduction aux Bases de Données'),
     0.50,
     '2024-10-15'
