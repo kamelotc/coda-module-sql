@@ -8,9 +8,9 @@ Les entités principales:
 
 Les relations:
 
-    QUARTIER <--> BAR : Relation 0..N
-    BAR <--> CARTE_PRIX : Relation 1..N
-    BIERE <--> CARTE_PRIX : Relation 0..N 
+    QUARTIER <--> BAR : Relation 0_N
+    BAR <--> CARTE_PRIX : Relation 1_N
+    BIERE <--> CARTE_PRIX : Relation 0_N 
 
 
 Les règles métier:
