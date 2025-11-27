@@ -30,7 +30,6 @@ CREATE TABLE barabar.prix (
     prix DECIMAL(5,2) NOT NULL CHECK (prix > 0),
 
     PRIMARY KEY (id_bar, id_biere),
-
     FOREIGN KEY (id_bar) REFERENCES barabar.bar(id_bar),
     FOREIGN KEY (id_biere) REFERENCES barabar.biere(id_biere)
 );

@@ -1,6 +1,6 @@
 1. prix moyen de la bière par quartier
 
-SELECT q.nom_quartier, ROUND(AVG(p.prix), 2) as prix_moyen
+SELECT q.nom_quartier
 FROM quartier q
 JOIN bar b ON q.id_quartier = b.id_quartier
 JOIN prix p ON b.id_bar = p.id_bar
@@ -38,10 +38,3 @@ HAVING MIN(p.prix) >= 6.00;
 
 
 5. top bar avec panier moyen maximum
-
-SELECT b.nom_bar, ROUND(AVG(p.prix), 2) as moyenne_carte
-FROM bar b
-JOIN prix p ON b.id_bar = p.id_bar
-GROUP BY b.nom_bar
-ORDER BY moyenne_carte DESC
-LIMIT 1;

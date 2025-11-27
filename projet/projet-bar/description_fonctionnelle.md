@@ -15,21 +15,9 @@ Les relations:
 
 Les règles métier:
 
-    Règle prix :
-
-        Un bar ne peut proposer qu'un seul prix pour une même bière.
-
-    Règle géographique :
-
-        Un bar doit obligatoirement être rattaché à un quartier existant.
-
-    Règle catalogue :
-
-        Une bière peut être créée dans le catalogue sans être vendue par aucun bar.
-
-    Règle tarification obligatoire :
-
-        Un bar enregistré dans la base doit avoir au moins une bière à sa carte.
+    Un bar ne peut proposer qu'un seul prix pour une même bière.
+    Une bière peut être créée dans le catalogue sans être vendue par aucun bar.
+    Un bar enregistré dans la base doit avoir au moins une bière à sa carte.
 
 
 Les attributs importants:
@@ -50,7 +38,7 @@ Les attributs importants:
 
                 adresse
 
-    Bieres :
+    Biere :
 
                 id_biere (Identifiant unique)
 

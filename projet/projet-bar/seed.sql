@@ -1,4 +1,4 @@
--- Objectif : 10 Quartiers, 20 Bars, 40 Bières, 150+ Prix
+-- 10 Quartiers, 20 Bars, 40 Bières, 150+ Prix
 
 SET search_path TO barabar;
 
